@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
+        <!--jQuery library--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hospitals</title>  
+      <link rel="stylesheet" text="text/css" href="index.css"> 
+      <link rel="shortcut icon" href="https://www.mygov.in/sites/all/themes/mygov/favicon.ico" type="image/vnd.microsoft.icon" />
+      <style>
+          .sidebar {
+  margin: 0;
+  padding-top:  50px;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 30px 16px;
+  height: 1000px;
+  font-size:25px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+      </style>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">               
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="a">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                            
+            <a href="index.html" class="navbar-brand">Covid-19</a>
+                        </div>
+          <div>
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="about.html"><span class="glyphicon glyphicon-home"></span>About</a></li>
+                                         <li><a href="hospitals.html"><span class="glyphicon glyphicon-circle-hospital"></span>Hospitals</a></li>
+                                  
+                       <li><a href="bookings.html"><span class="glyphicon glyphicon list"></span>Bookings</a></li>
+                   </ul>
+           <ul class="nav navbar-nav navbar-right">
+                       <li><a href="report.html"><i class="glyphicon glyphicon-stats"></i>Area wise report</a></li>
+                    
+            <li><a href="contact.html"><span class="glyphicon glyphicon-phone-alt"></span>Contact</a></li>
+                                                <li><a href="faq.html"><span class="  glyphicon glyphicon-question-sign"></span>Faq's</a></li>
+        
+            </ul>
+   
+        </div>
+</div>
+</nav>
+    <div class="sidebar">
+  <a class="active" href="hospitals.html">Isolation Centres</a>
+  <a href="quarantine.html">Quarantine Centres</a>
+          <a href="testing.html">Testing Centres</a>
+           <a href="pre.html">Pre-requisite</a>
+      
+     
+</div>
+
+<!-- Page content -->
+<div class="content">
+  <h2></h2>
+           
+  <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>Hospital Name</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td>1</td>
+        <td>Gandhi General Hospital, Secunderabad</td>
+        
+        
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Government Chest and General Hospital, Hyderabad</td>
+       
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Fever Hospital, Nallakunta, Hyderabad</td>
+       
+      </tr><tr>
+          <td>4</td>
+        <td>MGM Hospital, Warangal</td>
+        
+       
+      </tr><tr>
+        <td>5</td>
+        <td>RIMS, Adilabad</td>
+       
+      </tr><tr>
+        <td>6</td>
+        <td>District Hospital, Khammam</td>
+       
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>District Hospital, Karimnagar</td>
+       
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Government General Hospital, Nizamabad</td>
+       
+      </tr><tr>
+        <td>9</td>
+        <td>Government General Hospital, Nalgonda</td>
+       
+      </tr><tr>
+        <td>10</td>
+        <td>Government General Hospital, Suryapet</td>
+       
+      </tr><tr>
+        <td>11</td>
+        <td>Government General Hospital, Siddipet</td>
+       
+      </tr><tr>
+        <td>12</td>
+        <td>Government General Hospital, Mahbubnagar</td>
+       
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
